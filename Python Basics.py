@@ -76,3 +76,11 @@ elif 1==1:
     print("Equal")
 else:
     print("Damn")
+    
+#for Loop
+sequence=[1,2,3,4,5]
+for num in sequence:
+    print num
+    
+
+
