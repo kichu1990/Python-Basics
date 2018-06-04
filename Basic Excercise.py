@@ -25,7 +25,24 @@ def match_words (words):
         if len(word)>0 and word[0]==word[-1]:
              count+=1
     return count
-  
+
+#Given a list of strings, return a list with the strings in sorted order, except group all
+#the strings that begin with 'x' first
+def front_x(words):
+    list1.clear()
+    list2.clear()
+    count=0
+    for word in words:
+        if word[0]=='x':
+            list1.append(word)
+        else:
+            list2.append(word)
+        count+=1
+    return count
+list1.sort()
+list2.sort()
+print(list1+list2)
+
 #List
 #Construct a list of integers
 list_int=[1,2,3,4,5]
@@ -67,7 +84,7 @@ list_int[1:4]
 # Write a code to replace an item in a list with a new item. 
 list_int[3]=15
 
-
+#Slicing of Strings
 str3='python is a good scripting language'
 str3[:]
 str3[0:]
