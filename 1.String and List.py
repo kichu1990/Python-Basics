@@ -114,3 +114,11 @@ def sort_last(tuples):
 
 print(sort_last([(1, 3), (3, 2), (2, 1)]))
 print(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]
+
+#Given a list of numbers, return a list where all adjacent == elements have been reduced to a single element
+def rmv_dup(numlist):
+    for i in range(len(numlist) - 1, 0, -1):
+        if numlist[i] == numlist[i-1]:
+             del numlist[i]          
+            
+print(numlist([2, 2, 3, 3, 3]))                
