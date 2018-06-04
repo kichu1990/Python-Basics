@@ -1,5 +1,4 @@
 #How do you retrieve 5th character of a string "we are learning python" ?
-
 str="we are learning python" 
 str[5]
 
