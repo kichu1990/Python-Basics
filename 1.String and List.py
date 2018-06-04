@@ -105,3 +105,12 @@ queue.append("Terry")
 queue.append("Graham")         
 queue.popleft()                
 queue.popleft()     
+
+#Given a list of non-empty tuples, return a list sorted in increasing order by the last element in each tuple. 
+def last(a): 
+  return a[-1]
+def sort_last(tuples):  
+  return sorted(tuples, key=last)
+
+print(sort_last([(1, 3), (3, 2), (2, 1)]))
+print(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]
